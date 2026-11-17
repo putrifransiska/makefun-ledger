@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>make.fun ledger</title>
+<script type="module" src="core.js"></script>
+<style>
+:root {
+  --ink: #121b2e; --navy: #16264a; --link: #1d4ed8; --serif: Georgia, 'DejaVu Serif', serif;
+  font: 15px/1.45 system-ui, sans-serif; color: var(--ink); background: #eef1f5; font-variant-numeric: tabular-nums;
+}
+body { margin: 0; }
+a { color: var(--link); text-decoration: none; }
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .8rem; padding: .55rem max(1rem, calc(50% - 40rem)); background: var(--navy); color: #fff; }
+.brand { color: #fff; font: 700 1.1rem var(--serif); }
+.brand b { color: #8fe3b9; }
+.bar nav { order: 5; flex-basis: 100%; display: flex; gap: .2rem .9rem; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
+.bar nav a { color: #c9d3e8; padding: .15rem 0; }
+main { max-width: 80rem; margin: 0 auto; padding: 1rem 1rem 3rem; }
+@media (min-width: 760px) {
+  .bar nav { order: 0; flex-basis: auto; margin-left: 1.2rem; }
+}
+</style>
+<header class="bar"><a class="brand" href="#/">make.fun <b>ledger</b></a><nav aria-label="Pages"><a href="#/">Board</a><a>Bounty</a><a>Leaderboard</a><a>Profile</a></nav><p id="tally"></p></header>
+<main></main>
